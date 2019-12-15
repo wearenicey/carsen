@@ -1,0 +1,57 @@
+.intro {
+  background: radial-gradient(#ffffff, rgb(224, 219, 219)) !important;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ltone {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    @include media-breakpoint-down(sm) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  h4 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .lttwo {
+    display: flex;
+    justify-content: center;
+  }
+
+  svg {
+    @include media-breakpoint-down(sm) {
+      transform: scale(0.85);
+    }
+  }
+}
+
+.ml12 {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: $text-secondary-800;
+  @include media-breakpoint-down(sm) {
+    letter-spacing: 0.1em;
+  }
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml10 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $text-secondary-800;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+}

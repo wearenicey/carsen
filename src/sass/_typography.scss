@@ -1,0 +1,163 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 { font-size: $h1-font-size;
+          @include media-breakpoint-down(lg) { font-size: $h2-font-size; }
+          @include media-breakpoint-down(md) { font-size: 26px; }
+          @include media-breakpoint-down(sm) { font-size: 23px; }
+          @include media-breakpoint-down(xs) { font-size: 20px; }
+        }
+h2, .h2 { font-size: $h2-font-size; }
+h3, .h3 { font-size: $h3-font-size;
+          @include media-breakpoint-down(lg) { font-size: $h4-font-size !important; }
+          @include media-breakpoint-down(md) { font-size: 24px; }
+          @include media-breakpoint-down(sm) { font-size: 18px; }
+          @include media-breakpoint-down(xs) { font-size: 16px; }
+}
+h4, .h4 { font-size: $h4-font-size;
+          @include media-breakpoint-down(lg) { font-size: $h5-font-size; }
+          @include media-breakpoint-down(md) { font-size: 20px; }
+          @include media-breakpoint-down(sm) { font-size: 18px; }
+          @include media-breakpoint-down(xs) { font-size: 15px; }
+        }
+h5, .h5 { font-size: $h5-font-size;
+          line-height: 1.5rem }
+h6, .h6 { font-size: $h6-font-size;
+          line-height: 1.5rem;
+          @include media-breakpoint-down(sm) { font-size: 14px; }
+        }
+
+
+.swiper-slide {
+
+  h1 {
+    @include media-breakpoint-down(md) { font-size: 30px; }
+    @include media-breakpoint-down(sm) { font-size: 24px; }
+    @include media-breakpoint-down(xs) { font-size: 20px; }
+  }
+
+  h3 {
+    @include media-breakpoint-down(md) { font-size: 24px; }
+    @include media-breakpoint-down(sm) { font-size: 18px; }
+    @include media-breakpoint-down(xs) { font-size: 16px; }
+  }
+
+  h4 {
+    @include media-breakpoint-down(sm) { font-size: 18px; }
+    @include media-breakpoint-down(xs) { font-size: 15px; }
+  }
+
+  p {
+    @include media-breakpoint-down(sm) { font-size: 12px; }
+    @include media-breakpoint-down(xs) { font-size: 11px; }
+  }
+
+  .button-strategize,
+  .button-analyze,
+  .button-monetize {
+    @include media-breakpoint-down(md) {
+      padding: 4px 0.75rem;
+    }
+  }
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color-white;
+	font-family: 'Muli', sans-serif;
+}
+
+p {
+  font-size: 0.875rem;
+  color: #fff;
+  @include media-breakpoint-down(sm) { font-size: 12px; }
+  @include media-breakpoint-down(xs) { font-size: 11px; }
+}
+
+// ------------------ MENU
+
+.carsen-nav {
+  h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    font-weight: 700;
+    margin: 0.5rem 0 0.5rem 0 !important;
+  }
+  .menu-title {
+    padding-left: 1rem;
+    text-transform: uppercase;
+    background-color: #979797;
+    display: block;
+    margin-bottom: .25rem;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .mt-active {
+    background-size: 101%;
+    background: linear-gradient(to right, #4F819E, #75A1BA, #83ABC2);
+    background: -webkit-linear-gradient(to right, #4F819E, #75A1BA, #83ABC2);
+    background: -moz-linear-gradient(to right, #4F819E, #75A1BA, #83ABC2);
+    background: -o-linear-gradient(to right, #4F819E, #75A1BA, #83ABC2);
+    background: -ms-linear-gradient(to right, #4F819E, #75A1BA, #83ABC2);
+    box-shadow: 0px 6px 12px -8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #83ABC2;
+  }
+  .mta-active {
+    background-size: 101%;
+    background: linear-gradient(to right, #0F6EAF, #1F83C7, #40A0E1);
+    background: -webkit-linear-gradient(to right, #0F6EAF, #1F83C7, #40A0E1);
+    background: -moz-linear-gradient(to right, #0F6EAF, #1F83C7, #40A0E1);
+    background: -o-linear-gradient(to right, #0F6EAF, #1F83C7, #40A0E1);
+    background: -ms-linear-gradient(to right, #0F6EAF, #1F83C7, #40A0E1);
+    box-shadow: 0px 6px 12px -8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #40A0E1;
+  }
+  .mtm-active {
+    background-size: 101%;
+    background: linear-gradient(to right, #148B5A, #42A27A, #5FB490);
+    background: -webkit-linear-gradient(to right, #148B5A, #42A27A, #5FB490);
+    background: -moz-linear-gradient(to right, #148B5A, #42A27A, #5FB490);
+    background: -o-linear-gradient(to right, #148B5A, #42A27A, #5FB490);
+    background: -ms-linear-gradient(to right, #148B5A, #42A27A, #5FB490);
+    box-shadow: 0px 6px 12px -8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #5FB490;
+  }
+  .menu-title-stroke {
+    padding-left: 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #979797;
+    display: block;
+    margin-bottom: .25rem;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4D4D4D;
+  }
+  .navigation {
+    font-size: 14px;
+    color: #4D4D4D;
+    padding-left: 1rem;
+  }
+  .navigation-active {
+    font-size: 14px;
+    color: #ED2195;
+    padding-left: 1rem;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91.589" height="32" viewBox="0 0 91.589 32">
+  <g id="menu-hamb-close" transform="translate(-1723.5 -23)">
+    <text id="close" transform="translate(1723.5 49)" fill="#fff" font-size="26" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">close</tspan></text>
+    <g id="Group_366" data-name="Group 366" transform="translate(2)">
+      <line id="Line_49" data-name="Line 49" x2="17.404" transform="translate(1799.368 36.579) rotate(45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="Line_51" data-name="Line 51" x2="17.404" transform="translate(1811.675 36.579) rotate(135)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

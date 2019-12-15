@@ -1,0 +1,357 @@
+.carsen-nav {
+  .carsen-navigation-wrapper {
+    div {
+      .row {
+        div:nth-child(1) {
+          .row {
+            h1 {
+              @include media-breakpoint-down(xs) {
+                text-align: center;
+              }
+            }
+            .col-lg-3 {
+              @include media-breakpoint-down(md) {
+                margin-bottom: 2rem !important;
+              }
+            }
+          }
+        }
+        div:nth-child(2) {
+          .row {
+            h1 {
+              @include media-breakpoint-down(xs) {
+                text-align: center;
+              }
+            }
+            .col-lg-3 {
+              @include media-breakpoint-down(md) {
+                margin-bottom: 2rem !important;
+              }
+            }
+          }
+        }
+        div:nth-child(3) {
+          .row {
+            h1 {
+              @include media-breakpoint-down(xs) {
+                text-align: center;
+              }
+            }
+            .col-lg-3 {
+              @include media-breakpoint-down(md) {
+                margin-bottom: 2rem !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-icon {
+  @include media-breakpoint-down(md) {
+    margin: 2rem 0;
+  }
+}
+
+.navigation-is-open .swiper-container {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.carsen-nav-trigger {
+  z-index: 3;
+  /* image replacement */
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+}
+.carsen-nav-trigger .carsen-nav-icon {
+  /* icon created in CSS */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+}
+.carsen-nav-trigger .carsen-nav-icon::before, .carsen-nav-trigger .carsen-nav-icon:after {
+  /* upper and lower lines of the menu icon */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s, width 0.5s, top 0.3s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  transition: transform 0.5s, width 0.5s, top 0.3s;
+}
+.carsen-nav-trigger .carsen-nav-icon::before {
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.carsen-nav-trigger .carsen-nav-icon::after {
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+.no-touch .carsen-nav-trigger:hover .carsen-nav-icon::after {
+  top: 2px;
+}
+.no-touch .carsen-nav-trigger:hover .carsen-nav-icon::before {
+  top: -2px;
+}
+.carsen-nav-trigger svg {
+  top: 0;
+  left: 0;
+}
+.carsen-nav-trigger circle {
+  /* circle border animation */
+  -webkit-transition: stroke-dashoffset 0.4s 0s;
+  -moz-transition: stroke-dashoffset 0.4s 0s;
+  transition: stroke-dashoffset 0.4s 0s;
+}
+//.navigation-is-open .carsen-nav-trigger {
+//  /* rotate trigger when navigation becomes visible */
+//  -webkit-transform: rotate(180deg);
+//  -moz-transform: rotate(180deg);
+//  -ms-transform: rotate(180deg);
+//  -o-transform: rotate(180deg);
+//  transform: rotate(180deg);
+//}
+.navigation-is-open .carsen-nav-trigger .carsen-nav-icon::after,
+.navigation-is-open .carsen-nav-trigger .carsen-nav-icon::before {
+  /* animate arrow --> from hamburger to arrow */
+  width: 50%;
+  -webkit-transition: -webkit-transform 0.5s, width 0.5s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s;
+  transition: transform 0.5s, width 0.5s;
+}
+//.navigation-is-open .carsen-nav-trigger .carsen-nav-icon::before {
+//  -webkit-transform: rotate(45deg);
+//  -moz-transform: rotate(45deg);
+//  -ms-transform: rotate(45deg);
+//  -o-transform: rotate(45deg);
+//  transform: rotate(45deg);
+//}
+//.navigation-is-open .carsen-nav-trigger .carsen-nav-icon::after {
+//  -webkit-transform: rotate(-45deg);
+//  -moz-transform: rotate(-45deg);
+//  -ms-transform: rotate(-45deg);
+//  -o-transform: rotate(-45deg);
+//  transform: rotate(-45deg);
+//}
+.no-touch .navigation-is-open .carsen-nav-trigger:hover .carsen-nav-icon::after, .no-touch .navigation-is-open .carsen-nav-trigger:hover .carsen-nav-icon::before {
+  top: 0;
+}
+.navigation-is-open .carsen-nav-trigger circle {
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset 0.4s 0.3s;
+  -moz-transition: stroke-dashoffset 0.4s 0.3s;
+  transition: stroke-dashoffset 0.4s 0.3s;
+}
+@media only screen and (min-width: 1170px) {
+  .carsen-nav-trigger {
+    top: 40px;
+  }
+}
+
+.carsen-nav {
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(#ffffff, rgb(224, 219, 219)) !important;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.7s;
+  -moz-transition: visibility 0s 0.7s;
+  transition: visibility 0s 0.7s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/menu-city.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.1;
+  }
+}
+
+.carsen-nav .carsen-navigation-wrapper {
+  /* all navigation content */
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 0 7rem 0;
+  -webkit-overflow-scrolling: touch;
+  //padding: 40px 5% 40px calc(5% + 80px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+}
+.navigation-is-open .carsen-nav {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.navigation-is-open .carsen-nav .carsen-navigation-wrapper {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+.carsen-nav .carsen-primary-nav {
+  margin-top: 60px;
+}
+.carsen-nav .carsen-primary-nav li {
+  margin: 1.6em 0;
+}
+.carsen-nav .carsen-primary-nav a {
+  font-size: 2rem;
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+.carsen-nav .carsen-primary-nav a.selected {
+  color: $text-secondary-600;
+}
+.no-touch .carsen-nav .carsen-primary-nav a:hover {
+  color: $text-secondary-800;
+}
+.carsen-nav .carsen-contact-info {
+  margin-top: 80px;
+}
+.carsen-nav .carsen-contact-info li {
+  font-family: "Merriweather", serif;
+  margin-bottom: 1.5em;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.3);
+}
+.carsen-nav .carsen-contact-info a {
+  color: #ffffff;
+}
+.carsen-nav .carsen-contact-info span {
+  display: block;
+}
+.carsen-nav .carsen-contact-info li, .carsen-nav .carsen-contact-info a, .carsen-nav .carsen-contact-info span {
+  font-size: 1.6rem;
+}
+@media only screen and (min-width: 1170px) {
+  .carsen-nav .carsen-navigation-wrapper {
+    padding: 3rem 6rem 8rem 6rem;
+  }
+  .carsen-nav .carsen-navigation-wrapper::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .carsen-nav .carsen-half-block {
+    width: 50%;
+    float: left;
+  }
+  .carsen-nav .carsen-primary-nav {
+    margin-top: 0;
+  }
+  .carsen-nav .carsen-primary-nav li {
+    margin: 2em 0;
+  }
+  .carsen-nav .carsen-primary-nav a {
+    font-size: 2.5rem;
+  }
+  .carsen-nav .carsen-contact-info {
+    margin-top: 120px;
+    text-align: right;
+  }
+  .carsen-nav .carsen-contact-info li {
+    margin-bottom: 2.4em;
+  }
+  .carsen-nav .carsen-contact-info li, .carsen-nav .carsen-contact-info a, .carsen-nav .carsen-contact-info span {
+    font-size: 2rem;
+  }
+}
+
+.no-js .swiper-container {
+  height: auto;
+  overflow: visible;
+}
+
+.no-js .carsen-nav {
+  position: static;
+  visibility: visible;
+}
+.no-js .carsen-nav .carsen-navigation-wrapper {
+  height: auto;
+  overflow: visible;
+  padding: 100px 5%;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+// Styling
+

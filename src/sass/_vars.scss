@@ -1,0 +1,86 @@
+@import "mixins/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+//@import "../../node_modules/bootstrap/scss/variables";
+
+
+$default-font: 'Muli', sans-serif;
+$accent: orange;
+$text-color: #333;
+$text-color-white: #fff;
+
+.text-black {
+  color: $text-color !important;
+}
+
+
+
+$text-primary-600: #ED2195;
+$text-primary-500: #F948AC;
+$text-primary-400: #FF76C3;
+$text-primary-300: #FFA1D6;
+$text-primary-200: #FFD4EC;
+
+$text-secondary-900: #001B2A;
+$text-secondary-800: #00324E;
+$text-secondary-700: #07486D;
+$text-secondary-600: #1D5C80;
+$text-secondary-500: #4F819E;
+$text-secondary-400: #75A1BA;
+$text-secondary-300: #B3D0E1;
+$text-secondary-200: #D7E8F2;
+
+.secondary-900 { color: $text-secondary-900 !important; }
+.secondary-700 { color: $text-secondary-700 !important; }
+.secondary-600 { color: $text-secondary-600 !important; }
+.secondary-500 { color: $text-secondary-500 !important; }
+.secondary-400 { color: $text-secondary-400 !important; }
+.secondary-300 { color: $text-secondary-300 !important; }
+.secondary-200 { color: $text-secondary-200 !important; }
+
+.green {
+	color: #92D3B8;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.gold {
+	color: #FFC164 !important;
+}
+
+.text-analyze {
+	color: #76C3F8;
+}
+
+.text-monetize {
+	color: #6BE9B5;
+}
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1280px);
+
+$gutter: $grid-gutter-width;
+
+// Typography
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+$h0-font-size:                $font-size-base * 3.5 !default;
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      1rem !default;
+$headings-font-family:        'Muli', sans-serif !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.3 !default;
+$headings-color:              #fff !default;
+
+$spacer: 1rem !default;

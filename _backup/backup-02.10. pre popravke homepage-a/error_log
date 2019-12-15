@@ -1,0 +1,6 @@
+[11-Jun-2019 11:34:22 UTC] PHP Warning:  require(../vendor/phpmailer/phpmailer/src/Exception.php): failed to open stream: No such file or directory in /home/carsense/public_html/request-post.php on line 11
+[11-Jun-2019 11:34:22 UTC] PHP Warning:  require(../vendor/phpmailer/phpmailer/src/Exception.php): failed to open stream: No such file or directory in /home/carsense/public_html/request-post.php on line 11
+[11-Jun-2019 11:34:22 UTC] PHP Fatal error:  require(): Failed opening required '../vendor/phpmailer/phpmailer/src/Exception.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/carsense/public_html/request-post.php on line 11
+[11-Jun-2019 11:35:14 UTC] PHP Warning:  file_get_contents(trainingbody.php): failed to open stream: No such file or directory in /home/carsense/public_html/request-post.php on line 129
+[11-Jun-2019 11:35:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/carsense/public_html/request-post.php:129) in /home/carsense/public_html/request-post.php on line 148
+[21-Jun-2019 13:04:20 UTC] PHP Parse error:  syntax error, unexpected 'name' (T_STRING) in /home/carsense/public_html/request-gdpr.php on line 38

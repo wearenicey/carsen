@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.15" height="32" viewBox="0 0 98.15 32">
+  <g id="menu-hamb" transform="translate(-1716.5 -23)">
+    <g id="noun_menu_1166840" transform="translate(1787 22)">
+      <path id="Path_2021" data-name="Path 2021" d="M23.2,44.5H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06h8.656a1.07,1.07,0,0,0,1.06-1.06h0A1.074,1.074,0,0,0,23.2,44.5Z" transform="translate(0 -25.427)"/>
+      <path id="Path_2022" data-name="Path 2022" d="M26.571,13H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06H26.59a1.07,1.07,0,0,0,1.06-1.06h0A1.087,1.087,0,0,0,26.571,13Z"/>
+      <path id="Path_2023" data-name="Path 2023" d="M26.571,75.9H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06H26.59a1.07,1.07,0,0,0,1.06-1.06h0A1.087,1.087,0,0,0,26.571,75.9Z" transform="translate(0 -50.774)"/>
+    </g>
+    <text id="menu" transform="translate(1716.5 49)" fill="#333" font-size="26" font-family="Muli-SemiBold, Muli" font-weight="600"><tspan x="0" y="0">menu</tspan></text>
+  </g>
+</svg>
