@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="116.5" height="32"><text transform="translate(0 26)" fill="#07486d" font-size="26" font-family="Muli-Bold, Muli" font-weight="700"><tspan x="0" y="0">menu</tspan></text><path data-name="Line 49" fill="none" stroke="#07486d" stroke-linecap="round" stroke-width="4" d="M91.5 13.5h23"/><path data-name="Line 50" fill="none" stroke="#07486d" stroke-linecap="round" stroke-width="4" d="M99.5 24.5h15"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="116.5" height="32" viewBox="0 0 116.5 32">
+  <g id="menu-text-line" transform="translate(-1712.5 -22.211)">
+    <text id="menu" transform="translate(1712.5 48.211)" fill="#07486d" font-size="26" font-family="Muli-Bold, Muli" font-weight="700"><tspan x="0" y="0">menu</tspan></text>
+    <line id="Line_49" data-name="Line 49" x2="23" transform="translate(1804 35.711)" fill="none" stroke="#07486d" stroke-linecap="round" stroke-width="4"/>
+    <line id="Line_50" data-name="Line 50" x2="15" transform="translate(1812 46.711)" fill="none" stroke="#07486d" stroke-linecap="round" stroke-width="4"/>
+  </g>
+</svg>

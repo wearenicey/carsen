@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="9.068" height="18.137"><g data-name="Group 9"><path data-name="Path 7" d="M5.668 6.235V3.967A1.134 1.134 0 016.8 2.834h1.134V0H5.667a3.4 3.4 0 00-3.4 3.4v2.835H0v2.834h2.267v9.069h3.4V9.069h2.267l1.134-2.834z" fill="#fff"/></g></svg>
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="9.068" height="18.137" viewBox="0 0 9.068 18.137">
+  <g id="Group_9" data-name="Group 9">
+    <path id="Path_7" data-name="Path 7" d="M133.668,6.235V3.967A1.134,1.134,0,0,1,134.8,2.834h1.134V0h-2.267a3.4,3.4,0,0,0-3.4,3.4V6.235H128V9.069h2.267v9.069h3.4V9.069h2.267l1.134-2.834Z" transform="translate(-128)" fill="#fff"/>
+  </g>
+</svg>
