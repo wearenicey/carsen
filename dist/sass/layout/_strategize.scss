@@ -1,0 +1,95 @@
+.strategize {
+	background-image: url(/img/strategy_second-bg.jpg);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	#landing {
+	margin-top: 14vh !important;
+	}
+
+	.fixed-bottom {
+		z-index: 1 !important;
+	}
+
+	header {
+		position: fixed !important;
+		z-index: 1;
+
+		.navbar {
+      padding: .5rem 1.75rem .5rem 1.75rem;
+      margin: 0;
+      background: #00324E;
+      z-index: 10;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+			@include media-breakpoint-down(xs) {
+				padding: 0.25rem 1.25rem;
+			}
+			.navbar-brand {
+				margin: 0 !important;
+			}
+    }
+
+    .navbar-text {
+      ul {
+        display: inline-flex ;
+        li {
+          font-size: 14px;
+					letter-spacing: 1px;
+					a {
+						color: white !important;
+					}
+        }
+      }
+    }
+	}
+
+	.strategize-h1 {
+		font-size: $font-size-base * 4 !important;
+		margin: 1rem 0;
+	}
+
+	.strategize-h0 {
+		font-size: $h0-font-size;
+	}
+
+	h3 {
+		line-height: 2.25rem;
+		letter-spacing: 1px;
+	}
+
+	h5 {
+		line-height: 1.5rem;
+		font-size: 1rem !important;
+		font-weight: 400 !important;
+		text-align: left !important;
+	}
+
+	.sub-domain-title {
+		font-size: 16px;
+		margin-bottom: 1rem;
+	}
+
+	.button-strategize {
+		display: inline-block !important;
+		margin-right: 12px;
+		border-radius: 3px;
+		background: $text-secondary-500 !important;
+
+		 p {
+			 font-size: 11px;
+			 font-weight: normal;
+			 color: $text-secondary-200;
+			 transition: 1s;
+
+			 &:hover {
+				 letter-spacing: 4px;
+				 transition: 1s;
+			 }
+		 }
+	}
+}
+
