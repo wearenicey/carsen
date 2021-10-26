@@ -1082,7 +1082,8 @@ a {
     height: 400px; }
     #consent-popup .test {
       overflow-y: scroll;
-      max-height: 200px !important; }
+      max-height: 220px !important;
+      overflow-x: hidden; }
     #consent-popup .pozicija {
       margin-left: 12px;
       margin-right: 12px;
@@ -1104,6 +1105,8 @@ a {
   -webkit-transition: opacity 1s ease;
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease; }
+  #consent-popup .buttons {
+    margin: 5px; }
   #consent-popup .list-style {
     list-style-type: circle; }
   #consent-popup.hidden {

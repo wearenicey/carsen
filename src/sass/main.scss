@@ -264,7 +264,8 @@ a {
 		height: 400px;
     .test {
       overflow-y: scroll;
-			max-height: 200px !important;
+			max-height: 220px !important;
+			overflow-x: hidden;
     }
     .pozicija {
 			margin-left:12px;
@@ -286,6 +287,9 @@ a {
 
 #consent-popup {
 
+	.buttons {
+		margin: 5px
+	}
   .list-style {
     list-style-type: circle;
   }
