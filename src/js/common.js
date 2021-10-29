@@ -109,7 +109,7 @@ anime.timeline({
 
 
 
-jQuery(document).ready(function ($) {
+
 	var isLateralNavAnimating = false;
 
 	//open/close lateral navigation
@@ -126,4 +126,3 @@ jQuery(document).ready(function ($) {
 			});
 		}
 	});
-});
