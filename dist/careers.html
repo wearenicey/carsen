@@ -30,6 +30,7 @@
 
 		gtag('config', 'UA-122466728-1');
 	</script>
+	<script src="https://cdn.pagesense.io/js/carsen/f9cdfb5b208d4ddcb3c10f4849c60984.js"></script>
 
 	<!-- CSS -------------------------------------------------------------->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -209,22 +210,10 @@
 			<div class="col-lg-6 text-center mb-4">
 				<h4 class="secondary-600">Personal information</h4>
 			</div>
-
-			<form id="contact-form" class="needs-validation" action="careers-post.php" method="POST" role="form"
+			<form id="contact-form" method="POST" name="careers" data-netlify="true" role="form" autocomplete="on" role="form"
 				autocomplete="on" enctype="multipart/form-data" novalidate>
-				<div class="messages">
-					<?php
-						if(!empty($_GET['msg'])  && $_GET['msg']=='success'){
-							echo '<div class="alert alert-success">Thank you for your submission. We will review your application and contact you with additional information.</div>';
-						}
-						else if(!empty($_GET['msg'])  && $_GET['filetype']=='fail'){
-							echo '<div class="alert alert-danger">Message could not be sent, Invalid file types. We accept only PDF, DOC, DOCX, PPTX and TXT.</div>';
-						}
-                        else if(!empty($_GET['msg'])  && $_GET['msg']=='fail'){
-							echo '<div class="alert alert-danger">Message could not be sent... Please try again.</div>';
-						}
-					?>
-				</div>
+
+
 				<div class="form-row mb-3">
 					<div class="col-3 mb-3">
 						<select id="title" name="title" class="form-control" aria-invalid="false" data-error="Select" required>
@@ -551,8 +540,7 @@
 						<div class="row">
 							<div class="col flex-center">
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" id="interest" name="interest"
-										value="Customer-Strategy">
+									<input class="form-check-input" type="radio" id="interest" name="interest" value="Customer-Strategy">
 									<label class="form-check-label text-dark" for="interest">Data Science</label>
 								</div>
 								<div class="form-check form-check-inline">
@@ -574,7 +562,7 @@
 					<div class="col mt-3">
 						<textarea id="message" class="form-control" name="message" rows="6"
 							placeholder="Please briefly describe how can you contribute to our success"
-							data-error="Enter your message please."></textarea>
+							data-error="Enter your message please." style="height: unset !important;"></textarea>
 						<div class="help-block with-errors"></div>
 					</div>
 				</div>
@@ -585,7 +573,7 @@
 						</label>
 					</div>
 					<div class="col">
-						<input type="file" id="attachment" name="attachment[]" multiple="multiple" style="border: 0 !important;">
+						<input type="file" id="attachment" name="attachment" multiple="multiple" style="border: 0 !important;">
 					</div>
 
 				</div>
@@ -859,25 +847,26 @@
 					<div class="col-lg-12">
 						<div class="row">
 
-								<div class="col-lg-3">
+							<div class="col-lg-3">
+								<div class="row">
+									<div class="col-lg-12">
+										<a href="contact.php">
+											<h1>Contact</h1>
+										</a>
+										<div class="menu-title-stroke">serbia</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<a href="contact.php">
-													<h1>Contact</h1>
-												</a>
-												<div class="menu-title-stroke">serbia</div>
-												<div class="row">
-													<div class="col-lg-12">
-														<address>
-														<div class="navigation">Marije Bursac 21E, Belgrade</div>
-														<div class="navigation"><a class="text-dark" href="mailto:office@carsen.se">office@carsen.se</a></div>
-														<div class="navigation"><a class="text-dark" href="tel:+38163430253">+381 63 430 253</a></div>
-													</address>
-													</div>
-												</div>
+												<address>
+													<div class="navigation">Marije Bursac 21E, Belgrade</div>
+													<div class="navigation"><a class="text-dark"
+															href="mailto:office@carsen.se">office@carsen.se</a></div>
+													<div class="navigation"><a class="text-dark" href="tel:+38163430253">+381 63 430 253</a></div>
+												</address>
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -889,10 +878,10 @@
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
 		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
 		integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
 
