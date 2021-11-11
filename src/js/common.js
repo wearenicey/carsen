@@ -109,7 +109,7 @@ anime.timeline({
 
 
 
-
+jQuery(document).ready(function ($) {
 	var isLateralNavAnimating = false;
 
 	//open/close lateral navigation
@@ -119,10 +119,10 @@ anime.timeline({
 		if (!isLateralNavAnimating) {
 			if ($(this).parents('.csstransitions').length > 0) isLateralNavAnimating = true;
 
-			$('body').toggleClass('navigation-is-open');
 			$('.carsen-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
 				//animation is over
 				isLateralNavAnimating = false;
 			});
 		}
 	});
+});

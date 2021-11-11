@@ -46,35 +46,7 @@
 	<!-- Swiper -------------------------------------------------------------->
 	<link rel="stylesheet" href="css/swiper.css">
 
-	<link rel="stylesheet" type="text/css"
-		href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-	<script>
-		window.addEventListener("load", function () {
-			window.cookieconsent.initialise({
-				"palette": {
-					"popup": {
-						"background": "#eaf7f7",
-						"text": "#5c7291"
-					},
-					"button": {
-						"background": "#ED2195",
-						"text": "#ffffff"
-					}
-				},
-				"content": {
-					"message": "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
-					"dismiss": "Accept",
-					"link": "Learn more",
-					"href": "http://carsen.se/privacy.html"
-				},
-				"cookie": {
-					"expiryDays": 7,
-					"name": 'carsen',
-				}
-			})
-		});
-	</script>
+	
 
 </head>
 
@@ -873,6 +845,86 @@
 			</div>
 		</div>
 	</div>
+	<footer class="fixed-bottom ">
+		<div id="consent-popup" class="hidden text-dark ">
+			<div class="container">
+				<div class="test">
+					<p class="text-dark mt-3 h4">This website uses cookies
+					</p>
+					<p class="text-dark pb-3 border-bottom">We use cookies to personalise content and ads, to provide social media
+						features and to
+						analyse our traffic. We also share information about your use of our site with our social media, advertising
+						and analytics partners who may combine it with other information that you’ve provided to them or that
+						they’ve
+						collected from your use of their services. <a style="color: #FF76C3;" href="/privacy.html">Learn more</a>
+					</p>
+					<div class="row mt-2">
+						<div class="col-sm-4">
+							<div class="form-check uncheckbox">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input " value="" checked disabled>Necessary
+								</label>
+							</div>
+							<div>
+								<ul class="list-style">
+									<li class="small ml-3"> Required to run the website</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" value="">Analyses
+								</label>
+							</div>
+							<div>
+								<ul class="list-style small ml-3">
+									<li>Monitoring website usage and optimizing the user experience</li>
+									<li> Evaluation of marketing actions</li>
+
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" value="">Personalization
+								</label>
+							</div>
+							<ul class="list-style small ml-3">
+								<li> Storage of your preferences from previous visits</li>
+								<li> Collecting user feedback to improve our website</li>
+								<li> Recording of your interests in order to provide customised content and offers</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 pozicija float-lg-right">
+					<button id="accept" type="button" class="btn btn-secondary d-block d-md-inline buttons">Use necessary cookies
+						only</button>
+					<button id="accept1" type="button" class="btn btn-secondary d-block d-md-inline buttons">Allow
+						selection</button>
+					<button id="accept2" type="button" class="btn btn-primary d-block d-md-inline buttons">Allow all
+						cookies</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- <div class="container-fluid">
+			<div class="row justify-content-between align-items-center mx-1">
+				<div class="col-lg-10 col-xl-10 d-none d-lg-block">
+					<p>Carsen is analytics and GDPR consultancy helping
+						businesses improve their operational efficiency and customer-centricity through strategic use of
+						advanced analytics across operations while maintaining full compliance.</p>
+				</div>
+				<a class="d-lg-none" href="contact.php">Contact us</a>
+				<a class="mr-2" href="privacy.html">Privacy Policy</a>
+			</div>
+		</div> -->
+	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

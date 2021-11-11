@@ -42,35 +42,7 @@
 
 	<link rel="stylesheet" href="../../css/swiper.css">
 
-	<link rel="stylesheet" type="text/css"
-		href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-	<script>
-		window.addEventListener("load", function () {
-			window.cookieconsent.initialise({
-				"palette": {
-					"popup": {
-						"background": "#eaf7f7",
-						"text": "#5c7291"
-					},
-					"button": {
-						"background": "#ED2195",
-						"text": "#ffffff"
-					}
-				},
-				"content": {
-					"message": "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
-					"dismiss": "Accept",
-					"link": "Learn more",
-					"href": "http://carsen.se/privacy.html"
-				},
-				"cookie": {
-					"expiryDays": 7,
-					"name": 'carsen',
-				}
-			})
-		});
-	</script>
+
 
 </head>
 
@@ -115,71 +87,138 @@
 		</nav>
 	</header>
 	<header class="container-fluid p-0 d-none d-lg-block">
-    <nav id="navmenu" class="navbar">
-      <a class="navbar-brand" href="/home.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="134.17" height="44.794" viewBox="0 0 134.17 44.794">
-          <g id="logo_header" transform="translate(0 -283.263)">
-            <g id="Group_10" data-name="Group 10" transform="translate(0 283.263)">
-              <path id="Path_67" data-name="Path 67"
-                d="M18.365,283.266s-.3-.006-.406,0a.961.961,0,0,0-.141.006.391.391,0,0,0-.34.372c-.006.058-.012.337-.012.384l0,1.851,0,2.441s0,.277,0,.364a.448.448,0,0,0,.1.253.3.3,0,0,0,.091.07.7.7,0,0,0,.227.065,3.769,3.769,0,0,0,.466.02A16.569,16.569,0,1,1,1.8,305.662a.9.9,0,0,0-1.8,0,18.358,18.358,0,1,0,19.012-18.348v-2.235a20.6,20.6,0,0,1-.646,41.182.9.9,0,0,0,0,1.8,22.4,22.4,0,1,0,0-44.792"
-                transform="translate(0 -283.263)" fill="#f84cad" />
-              <path id="Path_68" data-name="Path 68"
-                d="M34.8,352.589a14.344,14.344,0,0,0,14.078-11.648.229.229,0,0,0-.047-.187.236.236,0,0,0-.175-.083H43.122a.228.228,0,0,0-.216.159,8.507,8.507,0,1,1,0-5.15.226.226,0,0,0,.216.158h1.4a.227.227,0,0,0,.227-.227.221.221,0,0,0-.024-.1,10.308,10.308,0,1,0-.423,6.709h2.386a12.536,12.536,0,1,1,.372-6.561.225.225,0,0,0,.221.179h1.373a.227.227,0,0,0,.226-.226.233.233,0,0,0-.017-.086A14.334,14.334,0,1,0,34.8,352.589"
-                transform="translate(-16.398 -315.842)" fill="#f84cad" />
-            </g>
-            <path id="Path_69" data-name="Path 69"
-              d="M248.412,376.034a18.357,18.357,0,0,1-4.13.428q-8.266,0-8.263-7.764,0-7.195,8.263-7.2a18.438,18.438,0,0,1,4.13.426v2.992a17.014,17.014,0,0,0-3.846-.427q-4.774,0-4.773,4.2,0,4.772,4.773,4.771a17.052,17.052,0,0,0,3.846-.428Zm1.782-4.231q0-4.6,6.495-4.6a19.182,19.182,0,0,1,3.476.284V366.5q0-2.01-3.889-2.009a17.183,17.183,0,0,0-4.872.712v-2.993a17.254,17.254,0,0,1,4.872-.711q7.664,0,7.665,4.929v10.031h-1.91l-1.623-1.056a8.614,8.614,0,0,1-4.16,1.056q-6.056,0-6.054-4.659m6.495-1.754q-2.72,0-2.72,1.71t2.279,1.709a6.49,6.49,0,0,0,3.917-1.166v-1.968a18.155,18.155,0,0,0-3.476-.285m10.158,6.413V361.5h2.921l.47,1.91a5.919,5.919,0,0,1,4.159-1.91v3.048a4.943,4.943,0,0,0-3.776,1.9v10.016h-3.774Zm9.688-.713v-3.133a15.4,15.4,0,0,0,5.755,1q2.436,0,2.435-1.567,0-1.427-1.637-1.425h-2.707q-4.559,0-4.559-4.559,0-4.7,6.653-4.7a16.312,16.312,0,0,1,5.313.853v3.136a14.433,14.433,0,0,0-5.414-1q-3.061,0-3.063,1.568,0,1.423,1.781,1.423h2.422q4.988,0,4.987,4.56,0,4.7-6.354,4.7a17.236,17.236,0,0,1-5.612-.856m27.238-5.3h-9.787q0,3.021,4.931,3.02a24.269,24.269,0,0,0,4.529-.428v2.993a24.85,24.85,0,0,1-5.1.428q-8.134,0-8.136-7.652,0-7.307,7.453-7.308,7.436,0,6.111,8.947m-9.787-2.764h6.239q.2-3.221-2.991-3.218-2.991,0-3.248,3.218m12.622,8.776V361.5h2.92l.47,1.91a9.455,9.455,0,0,1,5.47-1.91q5.174,0,5.172,5.57v9.39h-3.775V367.03a2.185,2.185,0,0,0-2.464-2.48,6,6,0,0,0-4.017,1.9v10.016h-3.776Z"
-              transform="translate(-186.47 -63.114)" fill="#fff" />
-          </g>
-        </svg>
-      </a>
+		<nav id="navmenu" class="navbar">
+			<a class="navbar-brand" href="/home.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="134.17" height="44.794" viewBox="0 0 134.17 44.794">
+					<g id="logo_header" transform="translate(0 -283.263)">
+						<g id="Group_10" data-name="Group 10" transform="translate(0 283.263)">
+							<path id="Path_67" data-name="Path 67"
+								d="M18.365,283.266s-.3-.006-.406,0a.961.961,0,0,0-.141.006.391.391,0,0,0-.34.372c-.006.058-.012.337-.012.384l0,1.851,0,2.441s0,.277,0,.364a.448.448,0,0,0,.1.253.3.3,0,0,0,.091.07.7.7,0,0,0,.227.065,3.769,3.769,0,0,0,.466.02A16.569,16.569,0,1,1,1.8,305.662a.9.9,0,0,0-1.8,0,18.358,18.358,0,1,0,19.012-18.348v-2.235a20.6,20.6,0,0,1-.646,41.182.9.9,0,0,0,0,1.8,22.4,22.4,0,1,0,0-44.792"
+								transform="translate(0 -283.263)" fill="#f84cad" />
+							<path id="Path_68" data-name="Path 68"
+								d="M34.8,352.589a14.344,14.344,0,0,0,14.078-11.648.229.229,0,0,0-.047-.187.236.236,0,0,0-.175-.083H43.122a.228.228,0,0,0-.216.159,8.507,8.507,0,1,1,0-5.15.226.226,0,0,0,.216.158h1.4a.227.227,0,0,0,.227-.227.221.221,0,0,0-.024-.1,10.308,10.308,0,1,0-.423,6.709h2.386a12.536,12.536,0,1,1,.372-6.561.225.225,0,0,0,.221.179h1.373a.227.227,0,0,0,.226-.226.233.233,0,0,0-.017-.086A14.334,14.334,0,1,0,34.8,352.589"
+								transform="translate(-16.398 -315.842)" fill="#f84cad" />
+						</g>
+						<path id="Path_69" data-name="Path 69"
+							d="M248.412,376.034a18.357,18.357,0,0,1-4.13.428q-8.266,0-8.263-7.764,0-7.195,8.263-7.2a18.438,18.438,0,0,1,4.13.426v2.992a17.014,17.014,0,0,0-3.846-.427q-4.774,0-4.773,4.2,0,4.772,4.773,4.771a17.052,17.052,0,0,0,3.846-.428Zm1.782-4.231q0-4.6,6.495-4.6a19.182,19.182,0,0,1,3.476.284V366.5q0-2.01-3.889-2.009a17.183,17.183,0,0,0-4.872.712v-2.993a17.254,17.254,0,0,1,4.872-.711q7.664,0,7.665,4.929v10.031h-1.91l-1.623-1.056a8.614,8.614,0,0,1-4.16,1.056q-6.056,0-6.054-4.659m6.495-1.754q-2.72,0-2.72,1.71t2.279,1.709a6.49,6.49,0,0,0,3.917-1.166v-1.968a18.155,18.155,0,0,0-3.476-.285m10.158,6.413V361.5h2.921l.47,1.91a5.919,5.919,0,0,1,4.159-1.91v3.048a4.943,4.943,0,0,0-3.776,1.9v10.016h-3.774Zm9.688-.713v-3.133a15.4,15.4,0,0,0,5.755,1q2.436,0,2.435-1.567,0-1.427-1.637-1.425h-2.707q-4.559,0-4.559-4.559,0-4.7,6.653-4.7a16.312,16.312,0,0,1,5.313.853v3.136a14.433,14.433,0,0,0-5.414-1q-3.061,0-3.063,1.568,0,1.423,1.781,1.423h2.422q4.988,0,4.987,4.56,0,4.7-6.354,4.7a17.236,17.236,0,0,1-5.612-.856m27.238-5.3h-9.787q0,3.021,4.931,3.02a24.269,24.269,0,0,0,4.529-.428v2.993a24.85,24.85,0,0,1-5.1.428q-8.134,0-8.136-7.652,0-7.307,7.453-7.308,7.436,0,6.111,8.947m-9.787-2.764h6.239q.2-3.221-2.991-3.218-2.991,0-3.248,3.218m12.622,8.776V361.5h2.92l.47,1.91a9.455,9.455,0,0,1,5.47-1.91q5.174,0,5.172,5.57v9.39h-3.775V367.03a2.185,2.185,0,0,0-2.464-2.48,6,6,0,0,0-4.017,1.9v10.016h-3.776Z"
+							transform="translate(-186.47 -63.114)" fill="#fff" />
+					</g>
+				</svg>
+			</a>
 
-      <div class="navbar-text">
-          <ol class="d-inline-flex">
-            <li><a class="mr-5" href="../../home.html#strategize">Strategize</a></li>
-            <li><a class="mr-5" href="../../home.html#analyze">Analyze</a></li>
-            <li><a class="mr-5" href="../../home.html#monetize">Monetize</a></li>
-            <li><a class="mr-5" href="../../careers.php">Careers</a></li>
-            <li><a class="" href="../../contact.php">Contact</a></li>
-          </ol>
-        </div>
+			<div class="navbar-text">
+				<ol class="d-inline-flex">
+					<li><a class="mr-5" href="../../home.html#strategize">Strategize</a></li>
+					<li><a class="mr-5" href="../../home.html#analyze">Analyze</a></li>
+					<li><a class="mr-5" href="../../home.html#monetize">Monetize</a></li>
+					<li><a class="mr-5" href="../../careers.php">Careers</a></li>
+					<li><a class="" href="../../contact.php">Contact</a></li>
+				</ol>
+			</div>
 
-      <a href="#carsen-nav" class="carsen-nav-trigger">
-        <svg xmlns="http://www.w3.org/2000/svg" width="98.15" height="32" viewBox="0 0 98.15 32">
-          <g transform="translate(-1716.5 -23)">
-            <g transform="translate(1787 22)">
-              <path fill="#fff"
-                d="M23.2,44.5H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06h8.656a1.07,1.07,0,0,0,1.06-1.06h0A1.074,1.074,0,0,0,23.2,44.5Z"
-                transform="translate(0 -25.427)" />
-              <path fill="#fff"
-                d="M26.571,13H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06H26.59a1.07,1.07,0,0,0,1.06-1.06h0A1.087,1.087,0,0,0,26.571,13Z" />
-              <path fill="#fff"
-                d="M26.571,75.9H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06H26.59a1.07,1.07,0,0,0,1.06-1.06h0A1.087,1.087,0,0,0,26.571,75.9Z"
-                transform="translate(0 -50.774)" />
-            </g>
-            <text transform="translate(1716.5 49)" fill="#fff" font-size="26" font-family="Muli-SemiBold, Muli"
-              font-weight="500">
-              <tspan x="0" y="0">menu</tspan>
-            </text>
-          </g>
-        </svg>
+			<a href="#carsen-nav" class="carsen-nav-trigger">
+				<svg xmlns="http://www.w3.org/2000/svg" width="98.15" height="32" viewBox="0 0 98.15 32">
+					<g transform="translate(-1716.5 -23)">
+						<g transform="translate(1787 22)">
+							<path fill="#fff"
+								d="M23.2,44.5H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06h8.656a1.07,1.07,0,0,0,1.06-1.06h0A1.074,1.074,0,0,0,23.2,44.5Z"
+								transform="translate(0 -25.427)" />
+							<path fill="#fff"
+								d="M26.571,13H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06H26.59a1.07,1.07,0,0,0,1.06-1.06h0A1.087,1.087,0,0,0,26.571,13Z" />
+							<path fill="#fff"
+								d="M26.571,75.9H14.56a1.07,1.07,0,0,0-1.06,1.06h0a1.07,1.07,0,0,0,1.06,1.06H26.59a1.07,1.07,0,0,0,1.06-1.06h0A1.087,1.087,0,0,0,26.571,75.9Z"
+								transform="translate(0 -50.774)" />
+						</g>
+						<text transform="translate(1716.5 49)" fill="#fff" font-size="26" font-family="Muli-SemiBold, Muli"
+							font-weight="500">
+							<tspan x="0" y="0">menu</tspan>
+						</text>
+					</g>
+				</svg>
 
-      </a>
-    </nav>
-  </header>
+			</a>
+		</nav>
+	</header>
 
-	<footer class="fixed-bottom">
-		<div class="container-fluid">
+	<footer class="fixed-bottom ">
+		<div id="consent-popup" class="hidden text-dark ">
+			<div class="container">
+				<div class="test">
+					<p class="text-dark mt-3 h4">This website uses cookies
+					</p>
+					<p class="text-dark pb-3 border-bottom">We use cookies to personalise content and ads, to provide social media
+						features and to
+						analyse our traffic. We also share information about your use of our site with our social media, advertising
+						and analytics partners who may combine it with other information that you’ve provided to them or that
+						they’ve
+						collected from your use of their services. <a style="color: #FF76C3;" href="/privacy.html">Learn more</a>
+					</p>
+					<div class="row mt-2">
+						<div class="col-sm-4">
+							<div class="form-check uncheckbox">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input " value="" checked disabled>Necessary
+								</label>
+							</div>
+							<div>
+								<ul class="list-style">
+									<li class="small ml-3"> Required to run the website</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" value="">Analyses
+								</label>
+							</div>
+							<div>
+								<ul class="list-style small ml-3">
+									<li>Monitoring website usage and optimizing the user experience</li>
+									<li> Evaluation of marketing actions</li>
+
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input" value="">Personalization
+								</label>
+							</div>
+							<ul class="list-style small ml-3">
+								<li> Storage of your preferences from previous visits</li>
+								<li> Collecting user feedback to improve our website</li>
+								<li> Recording of your interests in order to provide customised content and offers</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 pozicija float-lg-right">
+					<button id="accept" type="button" class="btn btn-secondary d-block d-md-inline buttons">Use necessary cookies
+						only</button>
+					<button id="accept1" type="button" class="btn btn-secondary d-block d-md-inline buttons">Allow
+						selection</button>
+					<button id="accept2" type="button" class="btn btn-primary d-block d-md-inline buttons">Allow all
+						cookies</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- <div class="container-fluid">
 			<div class="row justify-content-between align-items-center mx-1">
-				<div class="col-lg-6 d-none d-lg-block">
+				<div class="col-lg-10 col-xl-10 d-none d-lg-block">
 					<p>Carsen is analytics and GDPR consultancy helping
 						businesses improve their operational efficiency and customer-centricity through strategic use of
 						advanced analytics across operations while maintaining full compliance.</p>
 				</div>
 				<a class="d-lg-none" href="contact.php">Contact us</a>
-				<a href="privacy.html">Privacy Policy</a>
+				<a class="mr-2" href="privacy.html">Privacy Policy</a>
 			</div>
-		</div>
+		</div> -->
 	</footer>
 
 	<div id="landing" class="container-fluid position-relative">
@@ -622,7 +661,49 @@
 		</div>
 	</div>
 
+	<script>
+		const cookieStorage = {
+			getItem: (item) => {
+				const cookies = document.cookie
+					.split(';')
+					.map(cookie => cookie.split('='))
+					.reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
+				return cookies[item];
+			},
+			setItem: (item, value) => {
+				document.cookie = `${item}=${value};`
+			}
+		}
 
+		const storageType = cookieStorage;
+		const consentPropertyName = 'jdc_consent';
+		const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+		const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+
+		window.onload = () => {
+
+			const acceptFn = event => {
+				saveToStorage(storageType);
+				consentPopup.classList.add('hidden');
+			}
+			const consentPopup = document.getElementById('consent-popup');
+			const acceptBtn = document.getElementById('accept');
+			const acceptBtn1 = document.getElementById('accept1');
+			const acceptBtn2 = document.getElementById('accept2');
+
+			acceptBtn.addEventListener('click', acceptFn);
+			acceptBtn1.addEventListener('click', acceptFn);
+			acceptBtn2.addEventListener('click', acceptFn);
+
+
+			if (shouldShowPopup(storageType)) {
+				setTimeout(() => {
+					consentPopup.classList.remove('hidden');
+				}, 2000);
+			}
+
+		};
+	</script>
 
 	<script src="../../js/swiper.min.js"></script>
 	<script src="../../js/jquery.min.js"></script>
