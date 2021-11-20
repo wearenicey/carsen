@@ -303,7 +303,7 @@ a {
   transition: opacity 1s ease;
 
   &.hidden {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 

@@ -1110,7 +1110,7 @@ a {
   #consent-popup .list-style {
     list-style-type: circle; }
   #consent-popup.hidden {
-    opacity: 0; }
+    visibility: hidden; }
 
 .intro {
   background: -webkit-radial-gradient(#ffffff, #e0dbdb) !important;
