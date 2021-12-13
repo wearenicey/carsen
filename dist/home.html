@@ -527,86 +527,7 @@
 
 	</main>
 
-	<footer class="fixed-bottom ">
-		<div id="consent-popup" class="hidden text-dark ">
-			<div class="container">
-				<div class="test">
-					<p class="text-dark mt-3 h4">This website uses cookies
-					</p>
-					<p class="text-dark pb-3 border-bottom">We use cookies to personalise content and ads, to provide social media
-						features and to
-						analyse our traffic. We also share information about your use of our site with our social media, advertising
-						and analytics partners who may combine it with other information that you’ve provided to them or that
-						they’ve
-						collected from your use of their services. <a style="color: #FF76C3;" href="/privacy.html">Learn more</a>
-					</p>
-					<div class="row mt-2">
-						<div class="col-sm-4">
-							<div class="form-check uncheckbox">
-								<label class="form-check-label">
-									<input type="checkbox" class="form-check-input " value="" checked disabled>Necessary
-								</label>
-							</div>
-							<div>
-								<ul class="list-style">
-									<li class="small ml-3"> Required to run the website</li>
 
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-check">
-								<label class="form-check-label">
-									<input type="checkbox" class="form-check-input" value="">Analyses
-								</label>
-							</div>
-							<div>
-								<ul class="list-style small ml-3">
-									<li>Monitoring website usage and optimizing the user experience</li>
-									<li> Evaluation of marketing actions</li>
-
-
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-check">
-								<label class="form-check-label">
-									<input type="checkbox" class="form-check-input" value="">Personalization
-								</label>
-							</div>
-							<ul class="list-style small ml-3">
-								<li> Storage of your preferences from previous visits</li>
-								<li> Collecting user feedback to improve our website</li>
-								<li> Recording of your interests in order to provide customised content and offers</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="my-3 pozicija float-lg-right">
-					<button id="accept" type="button" class="btn btn-secondary d-block d-md-inline buttons">Use necessary cookies
-						only</button>
-					<button id="accept1" type="button" class="btn btn-secondary d-block d-md-inline buttons">Allow
-						selection</button>
-					<button id="accept2" type="button" class="btn btn-primary d-block d-md-inline buttons">Allow all
-						cookies</button>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- <div class="container-fluid">
-			<div class="row justify-content-between align-items-center mx-1">
-				<div class="col-lg-10 col-xl-10 d-none d-lg-block">
-					<p>Carsen is analytics and GDPR consultancy helping
-						businesses improve their operational efficiency and customer-centricity through strategic use of
-						advanced analytics across operations while maintaining full compliance.</p>
-				</div>
-				<a class="d-lg-none" href="contact.html">Contact us</a>
-				<a class="mr-2" href="privacy.html">Privacy Policy</a>
-			</div>
-		</div> -->
-	</footer>
 
 
 
@@ -922,49 +843,7 @@
 
 	<script id="CookieDeclaration" src="https://consent.cookiebot.com/373b524c-8182-43f5-8fd5-5f211b915dc1/cd.js" type="text/javascript" async></script>
 
-	<script>
-		const cookieStorage = {
-			getItem: (item) => {
-				const cookies = document.cookie
-					.split(';')
-					.map(cookie => cookie.split('='))
-					.reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
-				return cookies[item];
-			},
-			setItem: (item, value) => {
-				document.cookie = `${item}=${value};`
-			}
-		}
 
-		const storageType = cookieStorage;
-		const consentPropertyName = 'jdc_consent';
-		const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-		const saveToStorage = () => storageType.setItem(consentPropertyName, true);
-
-		window.onload = () => {
-
-			const acceptFn = event => {
-				saveToStorage(storageType);
-				consentPopup.classList.add('hidden');
-			}
-			const consentPopup = document.getElementById('consent-popup');
-			const acceptBtn = document.getElementById('accept');
-			const acceptBtn1 = document.getElementById('accept1');
-			const acceptBtn2 = document.getElementById('accept2');
-
-			acceptBtn.addEventListener('click', acceptFn);
-			acceptBtn1.addEventListener('click', acceptFn);
-			acceptBtn2.addEventListener('click', acceptFn);
-
-
-			if (shouldShowPopup(storageType)) {
-				setTimeout(() => {
-					consentPopup.classList.remove('hidden');
-				}, 2000);
-			}
-
-		};
-	</script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
